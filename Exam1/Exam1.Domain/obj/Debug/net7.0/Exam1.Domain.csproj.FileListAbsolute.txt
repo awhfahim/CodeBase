@@ -1,0 +1,12 @@
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\bin\Debug\net7.0\Exam1.Domain.deps.json
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\bin\Debug\net7.0\Exam1.Domain.dll
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\bin\Debug\net7.0\Exam1.Domain.pdb
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\obj\Debug\net7.0\Exam1.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\obj\Debug\net7.0\Exam1.Domain.AssemblyInfoInputs.cache
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\obj\Debug\net7.0\Exam1.Domain.AssemblyInfo.cs
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\obj\Debug\net7.0\Exam1.Domain.csproj.CoreCompileInputs.cache
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\obj\Debug\net7.0\Exam1.Domain.sourcelink.json
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\obj\Debug\net7.0\Exam1.Domain.dll
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\obj\Debug\net7.0\refint\Exam1.Domain.dll
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\obj\Debug\net7.0\Exam1.Domain.pdb
+D:\AspNet-ExampleCodes\Exam4\Exam1\Exam1.Domain\obj\Debug\net7.0\ref\Exam1.Domain.dll

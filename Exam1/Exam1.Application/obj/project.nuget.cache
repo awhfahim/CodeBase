@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "818L7r0l+5D9OhZUccp3gpfS5n9odMfG1A8GLbEgXa/lDPwxEKSRwR6vzFiyktTzQvPhoSoMKjSi/X2VNns2Mw==",
+  "success": true,
+  "projectFilePath": "D:\\AspNet-ExampleCodes\\Exam4\\Exam1\\Exam1.Application\\Exam1.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fahim\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
+    "C:\\Users\\Fahim\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\Fahim\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Fahim\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Fahim\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Fahim\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
