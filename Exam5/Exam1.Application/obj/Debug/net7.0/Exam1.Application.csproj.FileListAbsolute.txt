@@ -1,0 +1,16 @@
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\bin\Debug\net7.0\Exam1.Application.deps.json
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\bin\Debug\net7.0\Exam1.Application.dll
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\bin\Debug\net7.0\Exam1.Application.pdb
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\bin\Debug\net7.0\Exam1.Domain.dll
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\bin\Debug\net7.0\Exam1.Domain.pdb
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\obj\Debug\net7.0\Exam1.Application.csproj.AssemblyReference.cache
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\obj\Debug\net7.0\Exam1.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\obj\Debug\net7.0\Exam1.Application.AssemblyInfoInputs.cache
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\obj\Debug\net7.0\Exam1.Application.AssemblyInfo.cs
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\obj\Debug\net7.0\Exam1.Application.csproj.CoreCompileInputs.cache
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\obj\Debug\net7.0\Exam1.Application.sourcelink.json
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\obj\Debug\net7.0\Exam1.Application.csproj.CopyComplete
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\obj\Debug\net7.0\Exam1.Application.dll
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\obj\Debug\net7.0\refint\Exam1.Application.dll
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\obj\Debug\net7.0\Exam1.Application.pdb
+D:\AspNet-ExampleCodes\Exam5\Exam1.Application\obj\Debug\net7.0\ref\Exam1.Application.dll
