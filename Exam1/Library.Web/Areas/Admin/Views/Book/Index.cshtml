@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/admin/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+}
+
+<div class="sm-col-12">
+    <div class="card">
+        <div class="card-header">Book List-Table</div>
+        <partial name="_ModalPartial" />
+        <partial name="_ResponsePartial" />
+        <div class="card-body">
+            <table id="books" class="table table-bordered table-striped">
+
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>AuthorName</th>
+                        <th>PublishDate</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts
+{
+    <script src="~/admin/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/admin/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/admin/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/admin/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/admin/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/admin/plugins/jszip/jszip.min.js"></script>
+    <script src="~/admin/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="~/admin/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="~/admin/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/admin/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="~/admin/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#books").DataTable({
+                processing: true,
+                serverSide: true,
+                responsive: true,
+                lengthChange: false,
+                autoWidth: false,
+                ajax: {
+                    url: "/Admin/Book/GetBooks"
+                    // type: "POST",
+                    // data: function (d) {
+                    //     d.SearchItem = {
+                    //         Title: $("#SearchItem_Title").val(),
+                    //         CourseFeesFrom: $("#SearchItem_CourseFeesFrom").val() === "" ? null : $("#SearchItem_CourseFeesFrom").val(),
+                    //         CourseFeesTo: $("#SearchItem_CourseFeesTo").val() === "" ? null : $("#SearchItem_CourseFeesTo").val()
+                    //     };
+                    //     //console.log(d.SearchItem);
+                    // },
+                },
+                columnDefs: [
+                    {
+                        orderable: false,
+                        targets: 3,
+                        render: function (data, type, row) {
+                            return `<button type="submit" class="btn btn-info btn-sm" onclick="window.location.href='/admin/book/update/${data}'" value='${data}'>
+                                                <i class="fas fa-pencil-alt">
+                                                </i>
+                                                Edit
+                                            </button>
+                                            <button type="submit" class="btn btn-danger btn-sm show-bs-modal" data-id='${data}' value='${data}'>
+                                                <i class="fas fa-trash">
+                                                </i>
+                                                Delete
+                                            </button>`;
+                        }
+                    }
+                ],
+                buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#books_wrapper');
+
+            $('#books').on('click', '.show-bs-modal', function (event) {
+                let id = $(this).data("id");
+                let modal = $("#modal-default");
+                modal.find('.modal-body p').text('Are you sure you want to delete this record?');
+                $("#deleteId").val(id);
+                $("#deleteForm").attr("action", "/admin/book/delete");
+                modal.modal('show');
+            });
+
+            $("#deleteButton").click(function () {
+                $("#deleteForm").submit();
+            });
+
+            $("#searchButton").click(function () {
+                $('#books').DataTable().ajax.reload(null, false);
+            });
+        });
+    </script>
+}

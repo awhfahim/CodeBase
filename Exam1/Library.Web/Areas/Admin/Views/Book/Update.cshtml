@@ -1,0 +1,34 @@
+﻿@model BookUpdateModel
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">Update Existing Book</div>
+        <partial name ="_ResponsePartial" />
+        <div class="card-body">
+            <form asp-action="update" asp-controller="book" asp-area="admin" asp-antiforgery="true">
+                <div class="form-group">
+                    <label asp-for="Title">Title</label>
+                    <input type="text" asp-for="Title" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="PublishDate">Publish Date</label>
+                    <input type="text" asp-for="PublishDate" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="AuthorName">Author Name</label>
+                    <input type="text" asp-for="AuthorName" class="form-control" />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
