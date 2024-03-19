@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Application", "Libr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Infrastructure", "Library.Infrastructure\Library.Infrastructure.csproj", "{10F40130-BCBF-4DFA-8501-8CF92735B44C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{5BC0E8AB-8047-4B52-853C-1288A1642AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Application.Tests", "Library.Application.Tests\Library.Application.Tests.csproj", "{82E8039F-F702-44CC-B77E-30528010C23A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,11 +37,18 @@ Global
 		{10F40130-BCBF-4DFA-8501-8CF92735B44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10F40130-BCBF-4DFA-8501-8CF92735B44C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10F40130-BCBF-4DFA-8501-8CF92735B44C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82E8039F-F702-44CC-B77E-30528010C23A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E8039F-F702-44CC-B77E-30528010C23A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E8039F-F702-44CC-B77E-30528010C23A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E8039F-F702-44CC-B77E-30528010C23A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F228AAC9-F164-4746-988C-21BAF7F9ABA6}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{82E8039F-F702-44CC-B77E-30528010C23A} = {5BC0E8AB-8047-4B52-853C-1288A1642AD9}
 	EndGlobalSection
 EndGlobal

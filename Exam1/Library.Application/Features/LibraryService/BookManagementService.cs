@@ -19,9 +19,9 @@ namespace Library.Application.Features.LibraryService
 
         public async Task CreateBookAsync(string title, DateTime publishDate, string authorName)
         {
-            bool IsDuplicate = await _unitOfWork.BookRepository.IsDuplicateAsync(title);
+            bool isDuplicate = await _unitOfWork.BookRepository.IsDuplicateAsync(title);
 
-            if (IsDuplicate)
+            if (isDuplicate)
             {
                 throw new DuplicateTitleException("Title is Duplicate");
             }
@@ -50,6 +50,11 @@ namespace Library.Application.Features.LibraryService
         public async Task UpdateBookAsync(Guid Id, string title, DateTime publishDate, string authorName)
         {
             var book = await LoadBookAsync(Id);
+            
+            if(book is null)
+            {
+                throw new NullReferenceException();
+            }
             if(book is not null) 
             {
                 book.Title = title;
